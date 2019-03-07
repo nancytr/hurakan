@@ -1,3 +1,10 @@
+/*
+  Hurakan
+  File: index.css
+  Author: Nancy Tran
+  Date Created: 05 Mar 2019
+  Date Moditifed: 05 Mar 2019
+*/
  html{
   font-family: sans-serif;
   margin: 0 auto;
@@ -13,7 +20,7 @@
 h1{
   text-align: center;
   font-size: 60px;
-  padding-top: 80px;
+  padding-top: 50px;
   /* padding-bottom: 20px; */
   font-size: 4em;
   font-weight: bolder;
@@ -21,10 +28,11 @@ h1{
 
 h2{
   font-size: 40px;
+  font-weight: lighter;
 }
 
 h3{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: normal;
   text-align: center;
 }
@@ -34,12 +42,16 @@ h4{
   font-weight: lighter;
 }
 
-li {
+.nav li {
   list-style: none;
   display: inline-block;
   float: right;
   padding: 20px;
   text-decoration: none;
+}
+.nav{
+  padding-bottom: 2em;
+  margin: 1em;
 }
 
 .mainButtons{
