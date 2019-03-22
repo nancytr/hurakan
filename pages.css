@@ -12,7 +12,7 @@ html{
  width: 90%;
  font-family: 'Karla', sans-serif;
  font-weight: normal;
- background-color: #FFFCF5;
+ background-color: #FEFFFD;
  position: relative;
  color: #2C4E5F;
  align-items: left;
@@ -130,11 +130,26 @@ body {
 .indent{
   left: 30px;
 }
+#about {
+  columns: 3;
+  padding: 70px;
+
+}
+.pic{
+  padding: 20px;
+  text-align: center;
+
+}
+.description{
+  text-align: center;
+}
 
 footer{
   padding: 20px 0 20px 0;
-  text-align: center;
-}
+  text-align: center;}
+  footer p{
+    font-size: smaller;
+  }
 
 section, footer {
  display: flex;

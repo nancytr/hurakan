@@ -140,6 +140,8 @@ body {
 
 footer{
   padding: 20px 0 20px 0;
+}footer p{
+  font-size: smaller;
 }
 section, footer {
   display: flex;
