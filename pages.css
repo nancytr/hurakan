@@ -3,7 +3,7 @@
   File: index.css
   Author: Nancy Tran
   Date Created: 05 Mar 2019
-  Date Moditifed: 07 Mar 2019
+  Date Moditifed: 21 Mar 2019
 */
 
 html{
@@ -13,17 +13,33 @@ html{
  font-family: 'Karla', sans-serif;
  font-weight: normal;
  background-color: #FFFCF5;
- text-align: center;
  position: relative;
- color: #344685;
+ color: #2C4E5F;
+ align-items: left;
 }
 
 h1{
  text-align: center;
- font-size: 60px;
- padding-top: 80px;
- font-size: 4em;
+ padding-top: 20px;
+ font-size: 2em;
  font-weight: bolder;
+}
+
+.ml16 {
+  color: inherit;
+  margin-top: 2.5em;
+  padding: 20px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 h2{
@@ -38,7 +54,6 @@ h3{
 
 h4{
  padding: 30px;
- font-weight: lighter;
 }
 
 li {
@@ -50,6 +65,8 @@ li {
 .nav{
   padding-bottom: 1em;
   margin: 1em;
+  position: sticky;
+  top: 0;
 }
 
 .nav li {
@@ -57,8 +74,14 @@ li {
   display: inline-block;
   float: right;
   padding: 20px;
-  text-decoration: none;
-}
+  text-decoration: none;}
+  .nav a{
+      color: inherit;
+      text-decoration: underline wavy; }
+      a:hover {
+       text-decoration: underline;
+       font-weight: bolder;
+       }
 
 #home {
   float: left;
@@ -68,26 +91,49 @@ li {
   column-count: 2;
 }
 
-div{
-  text-align: center;
-}
-
 p{
- font-family: 'Lato', sans-serif;
- color: inherit;
- margin: 0;
- /* font-size: smalle; */
- /* text-align: left; */
-}
+  font-family: 'Futura', sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: lighter;
+  text-align: left;}
+  p a{
+    font-weight: bolder;
+  }
 
 a {
- color: inherit;
- text-decoration: underline wavy; }
+ color: inherit;}
  a:hover {
-   text-decoration: underline; }
+  text-decoration: none;
+  font-weight: bolder;
+  }
 
 body {
-     font-size: 20px;
+  font-size: 20px;
+}
+.essential{
+  margin: 0 25em 0 25em;
+}
+
+.block{
+  margin: 0 auto;
+	padding: 0 0 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+  text-align: left;}
+  .block p{
+    margin: 0 0 .4rem 0;
+	  padding: 0.5rem 0;
+  }
+
+.indent{
+  left: 30px;
+}
+
+footer{
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
 
 section, footer {

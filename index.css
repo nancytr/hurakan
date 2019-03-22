@@ -7,20 +7,21 @@
 */
  html{
   font-family: sans-serif;
-  margin: 0 auto;
-  width: 80%;
+  /* margin: 0 10em 0 10em auto; */
+  /* width: 80%; */
   font-family: 'Karla', sans-serif;
   font-weight: normal;
-  background-color: #FFFCF5;
+  background-color: #FEFFFD;
   text-align: center;
   position: relative;
-  color: #344685;
+  color: #2C4E5F;
 }
 
 h1{
+  font-family: Futura;
   text-align: center;
   font-size: 60px;
-  padding-top: 50px;
+  padding-top: 20px;
   /* padding-bottom: 20px; */
   font-size: 4em;
   font-weight: bolder;
@@ -28,11 +29,11 @@ h1{
 
 .ml16 {
   color: inherit;
-  padding: 40px 0;
+  padding: 20px 0;
   /* font-weight: 800; */
-  font-size: 3.5em;
+  font-size: 3.8em;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   overflow: hidden;
   font-weight: bolder;
 }
@@ -43,45 +44,83 @@ h1{
 }
 
 h2{
-  font-size: 40px;
+  font-size: 2em;
   font-weight: lighter;
 }
 
 h3{
-  font-size: 25px;
+  font-size: 1.7em;
   font-weight: normal;
   text-align: center;
 }
 
 h4{
-  padding: 30px;
+  padding: 35px;
+  font-weight: lighter;
+}
+
+h5{
+  font-size: 1.2em;
   font-weight: lighter;
 }
 
 .nav li {
   list-style: none;
   display: inline-block;
-  float: right;
   padding: 20px;
+  float: right;
   text-decoration: none;
+
 }
 .nav{
   padding-bottom: 2em;
-  margin: 1em;
+  margin: 0 3em 0 3em;
+  position: sticky;
+  top: 0;
+  
 }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* .sticky {
+  position: fixed;
+  top: inherit;
+  width: inherit;
+} */
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .content { 
+  padding-top: 102px;
+}  */
 
 .mainButtons{
   column-count: 3;
-  padding: 20px;
+  margin: 1em 5em 0 5em;
+  padding: 10px;
   padding-bottom: 50px;
+}
+
+.context{
+  color: #2C4E5F;
+  width: 70%;
+  padding: 8em;
+  margin: 0 auto;
+  border: none;
+  position: relative;
+}
+.context img{
+  padding: 3rem;
+}
+
+.left{
+  padding: 0;
 }
 
 
 p{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Futura', sans-serif;
   color: inherit;
   margin: 0;
-  /* font-size: smalle; */
+  font-weight: lighter;
   text-align: left;
 }
 
@@ -89,14 +128,19 @@ a {
   color: inherit;
   text-decoration: underline wavy; }
   a:hover {
-    text-decoration: underline; }
+    color: #FF8984;
+    text-decoration: none;
+    font-weight: bolder;
+    }
 
 body {
       font-size: 20px;
 }
 
 
-
+footer{
+  padding: 20px 0 20px 0;
+}
 section, footer {
   display: flex;
   align-items: center;
@@ -128,27 +172,27 @@ section, footer {
           padding: 0 0.6em; }
         #faq .content .pair {
           margin-bottom: 2em; }
-          #faq .content .pair h3 {
+          #faq .content .pair h5 {
             cursor: pointer;
             text-align: left;
             /* text-transform: uppercase; */
             font-weight: normal;
             margin: 0 0 1em 0;
             letter-spacing: 0.05em; }
-            #faq .content .pair h3:after {
+            #faq .content .pair h5:after {
               content: "";
               display: inline-block;
               height: 0;
               width: 0;
               border: 0 solid transparent;
               border-width: 0.3em 0.5em;
-              border-left-color: #ff4115;
+              border-left-color: #FF8984;
               margin-left: 0.4em;
               transform: rotate(90deg);
               transform-origin: 25% 50%;
               transition: 0.1s ease-in-out transform; }
 
-          #faq .content .pair.collapsed h3:after {
+          #faq .content .pair.collapsed h5:after {
             transform: none; }
           #faq .content .pair.collapsed p {
             display: none; }

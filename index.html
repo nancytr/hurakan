@@ -5,7 +5,7 @@
     	<meta charset="UTF-8" />
     	<link rel="stylesheet prefetch" href="index.css?v=15" />
       <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Futura" rel="stylesheet">
     	<meta name="theme-color" content="#213e5b" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,13 +13,14 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
       <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="script.js?v=7"></script>
 
       <title>Hurakan</title>
   </head>
 
   <body>
-    <div class="nav">
+    <div class="nav header" id="myHeader">
       <ul>
           <li><a href="vr.html">vr experience</a></li>
           <li><a href="about.html">about</a></li>
@@ -27,64 +28,67 @@
     </div>
 
     <h1 class="ml16">Hurakan</h1>
-    <h3 class="subtitle">A hub for hurricane resources</h3><br>
+    <h3 class="subtitle">An all around guide for hurricane preparedness</h3><br>
 
     <div class="mainButtons">
       <div class="button1">
-        <a href="prepare.html"><img src="prepare.png" alt="prepare" width="325px"></a>
-        <h2><a href="prepare.html">how to prepare</a></h2>
+        <a href="prepare.html"><img src="prepare.png" alt="prepare" width="280px"></a>
+        <h3>how to prepare</h3>
       </div>
       <div class="button2">
-        <a href="during.html"><img src="during.png" alt="endure" width="325px"></a>
-        <h2>how to endure</h2>
+        <a href="during.html"><img src="during.png" alt="endure" width="280px"></a>
+        <h3>how to endure</h3>
       </div>
       <div class="button3">
-        <a href="after.html"><img src="after.png" alt="recover" width="325px"></a>
-        <h2>how to recover</h2>
+        <a href="after.html"><img src="after.png" alt="recover" width="280px"></a>
+        <h3>how to recover</h3>
       </div>
     </div>
     <br><br><br>
 
-    <div class="context">
-        <h2> Some things you might not know about hurricanes</h2><br><br>
+    <div class="context" data-aos="fade-down">
+        <h3>Some things you might not know about hurricanes</h3><br><br>
         <img src="hurricane.gif" alt="hurricane"> <br>
-        <h4> “More than $9 trillion of insured coastal property is vulnerable to hurricanes along the Gulf and Atlantic coasts from Texas to Maine. Additionally, 50 percent of the nation’s population now lives within 50 miles of the coast.”</h4>
-        <h4>4 of the 5 costliest hurricanes have occured within the past 10 years. 3 of these, Hurricane Maria, Hurricane Irma, and Hurricane Harvey, all happened within the 2017 Atlantic Hurricane Season.</h4>
-      </div>
+        <h1>$9 Trilllion</h1>
+        <p class="left" data-aos="fade-down"> “More than $9 trillion of insured coastal property is vulnerable to hurricanes along the Gulf and Atlantic coasts from Texas to Maine. Additionally, <b>50 percent</b> of the nation’s population now lives within 50 miles of the coast.”</p>
+        <img src="Surge1.jpg" width="400px">
+        <p class="left" data-aos="fade-down">4 of the 5 costliest hurricanes have occured within the past 10 years. 3 of these, Hurricane Maria, Hurricane Irma, and Hurricane Harvey, all happened within the 2017 Atlantic Hurricane Season.</p>
+    </div>
+    <br>
 
     <section id="faq">
     	<div class="wrap">
-    		<h2>Commonly asked questions</h2><br>
+        <h3><b>Commonly asked questions</b></h3><br>
     		<div class="content">
     			<div class="column">
             <div class="pair">
-                <h3>When does hurricane season start?</h3>
+                <h5>When does hurricane season start?</h5>
                 <p>Atlantic hurricane season begins June 1st, running through November 30th. On average, 12 storm systems are produced with 6 becoming hurricanes and 2 out of the 6 are categorized as 3 or higher. Peak hurricane production is mid-August to late October, though a devastating storm can happen at any given time during the season.</p>
               </div>
             <div class="pair">
-              <h3>What is the difference between a hurricane watch and a hurricane warning?</h3>
+              <h5>What is the difference between a hurricane watch and a hurricane warning?</h5>
               <p>When a hurricane is approaching land, a watch or warning is issued to the predicted impacted areas. A watch is issued if hurricane conditions are predicted to occur on a landmass within 24-36 hours. A warning is issued if hurricane conditions are predicted to occur on a landmass within 24 hours. These are officially issued by the National Hurricane Center.</p>
             </div>
             <div class="pair">
-              <h3>What is the “eye” of a hurricane?</h3>
+              <h5>What is the “eye” of a hurricane?</h5>
               <p>The "eye" is a roughly circular area of  light winds and fair weather found at the center of a severe tropical cyclone. Although the winds are calm at the axis of rotation, strong winds may extend well into the eye. There is little or no precipitation and sometimes the sky can be seen. The eye is the region of lowest surface pressure and warmest temperatures aloft.</p>
             </div>
             <div class="pair">
-              <h3>What is the “eyewall”?</h3>
+              <h5>What is the “eyewall”?</h5>
               <p>The eye is surrounded by the "eyewall", the roughly circular ring of deep convection which is the area of highest surface winds in the tropical cyclone. </p>
             </div>
           </div>
           <div class="column">
             <div class="pair">
-              <h3>What is storm surge and how is it different from storm tide?</h3>
+              <h5>What is storm surge and how is it different from storm tide?</h5>
               <p>Storm Surge is an abnormal rise of water generated by a storm, over and above the predicted astronomical tide. <b>Storm Tide</b> is the water level rise during a storm due to the combination of storm surge and the astronomical tide.</p>
             </div>
     				<div class="pair">
-    					<h3>How and why are tropical cyclones named?</h3>
+    					<h5>How and why are tropical cyclones named?</h5>
     					<p>Tropical cyclones are named to provide ease of communication between forecasters and the general public regarding forecasts, watches, and warnings. Since the storms can often last a week or longer and that more than one can be occurring in the same basin at the same time, names can reduce the confusion about what storm is being described.</p>
     				</div>
             <div class="pair">
-              <h3>Does climate change affect hurricane season?</h3>
+              <h5>Does climate change affect hurricane season?</h5>
               <p>Climate change does not directly cause hurricanes, but it does affect the power behind one. As a result of climate change, tropical waters and the atmosphere can be warmer during hurricane season, thus affecting the amount rainfall during a hurricane due to more moisture being collected.</p>
             </div>
     		</div>
@@ -95,30 +99,11 @@
   </body>
 
   <footer>
-    <p>nice</p>
+    <hr/>
+    <p>Senior Design Projects II by Nancy Tran & Annabelle Delatorre</p>
   </footer>
   <script>
-    $('.ml16').each(function(){
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-    });
-    
-    anime.timeline({loop: 1, easing: "easeOutExpo"})
-    .add({
-      targets: '.ml16 .letter',
-      translateY: [-100,0],
-      duration: 1400,
-      delay: function(el, i) {return 50 * i;}
-    });
-    
-    // ScrollReveal().reveal('.subtitle');
-    // ScrollReveal().reveal('.mainButtons');
-    // ScrollReveal().reveal('.context');
-    ScrollReveal().reveal('.subtitle', { delay: 200 });
-    ScrollReveal().reveal('.button1', { delay: 500 })
-    ScrollReveal().reveal('.button2', { delay: 600 })
-    ScrollReveal().reveal('.button3', { delay: 700 })
-    ScrollReveal().reveal('.context', { delay: 400 });
-    ScrollReveal().reveal('.wrap', { delay: 400 })
+    AOS.init();
 
     // anime.timeline({loop: 1, easing: "easeOutExpo", duration: 1300})
     // .add({
