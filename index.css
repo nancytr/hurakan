@@ -3,7 +3,7 @@
   File: index.css
   Author: Nancy Tran
   Date Created: 05 Mar 2019
-  Date Moditifed: 05 Mar 2019
+  Date Moditifed: 21 Mar 2019
 */
  html{
   font-family: sans-serif;
@@ -24,6 +24,22 @@ h1{
   /* padding-bottom: 20px; */
   font-size: 4em;
   font-weight: bolder;
+}
+
+.ml16 {
+  color: inherit;
+  padding: 40px 0;
+  /* font-weight: 800; */
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  overflow: hidden;
+  font-weight: bolder;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 h2{
@@ -80,6 +96,7 @@ body {
 }
 
 
+
 section, footer {
   display: flex;
   align-items: center;
@@ -108,7 +125,7 @@ section, footer {
         #faq .content .column {
           width: 50%;
           box-sizing: border-box;
-          padding: 0 0.5em; }
+          padding: 0 0.6em; }
         #faq .content .pair {
           margin-bottom: 2em; }
           #faq .content .pair h3 {
