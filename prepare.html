@@ -16,19 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js?v=7"></script>
-    <script>
-      $('.ml16').each(function(){
-      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-      });
-      
-      anime.timeline({loop: 1, easing: "easeOutExpo"})
-      .add({
-        targets: '.ml16 .letter',
-        translateY: [-100,0],
-        duration: 1400,
-        delay: function(el, i) {return 50 * i;}
-      });
-    </script>
+  
     <title>How to Prepare</title>
   </head>
 
