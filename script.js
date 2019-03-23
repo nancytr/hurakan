@@ -28,6 +28,38 @@ $(document).ready(function () {
 	ScrollReveal().reveal('.five', { delay: 400 })
 	ScrollReveal().reveal('.six', { delay: 400 })
 
+
+	// $(window).scroll(function() {
+	// 	if ($("body").width() < 600) {
+	// 		for (i in timelines) {
+	// 			timelines[i].timeline.seek(timelines[i].timeline.duration);
+	// 		}
+	// 		return;
+	// 	}
+
+	// 	var sectionsScrolled  = $(this).scrollTop() / $("#faq").height();
+	// 	$("#progress div").removeClass("active");
+	// 	$("#progress div").eq(sectionsScrolled).addClass("active");
+	// 	$("section").removeClass("visible").eq(sectionsScrolled).addClass("visible");
+
+	// 	sectionsScrolled += 3/5;
+	// 	var section = parseInt(sectionsScrolled);
+	// 	var actualProgress = sectionsScrolled % 1;
+	// 	var progress = 1;
+	// 	if (section in timelines) progress = Math.min(1, actualProgress * timelines[section].speed);
+
+	// 	if (section + 1 in timelines) timelines[section + 1].timeline.seek(0);
+	// 	if (section in timelines) timelines[section].timeline.seek(timelines[section].timeline.duration * progress);
+	// 	if (section - 1 in timelines) timelines[section - 1].timeline.seek(timelines[section - 1].timeline.duration);
+	// }).scroll();
+
+	// for (var i = 0; i < $("section").length; i++) $("#progress").append($("<div data-pos="+i+">"));
+
+	// $("#progress div").click(function() {
+	// 	smoothScroll($(window), $("section").eq($(this).attr("data-pos")).offset().top, 300);
+	// }).first().addClass("active");
+
+
 	//FAQ
 	$("#faq .pair").addClass("collapsed").find("h5").click(function () {
 		$(this).parent(".pair").toggleClass("collapsed");

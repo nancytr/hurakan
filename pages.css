@@ -81,7 +81,10 @@ li {
       a:hover {
        text-decoration: underline;
        font-weight: bolder;
-       }
+       }a:active {
+        color: #FF8984;
+        font-weight: bolder;
+      }
 
 #home {
   float: left;
@@ -97,16 +100,17 @@ p{
   margin: 0;
   font-weight: lighter;
   text-align: left;}
-  p a{
+  p a:link{
     font-weight: bolder;
   }
 
-a {
- color: inherit;}
- a:hover {
+a{
+  color: inherit;
+  text-decoration: underline wavy; }
+a:hover {
+  color: #FF8984;
   text-decoration: none;
-  font-weight: bolder;
-  }
+  font-weight: bolder;}
 
 body {
   font-size: 20px;
