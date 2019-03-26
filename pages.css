@@ -3,14 +3,13 @@
   File: index.css
   Author: Nancy Tran
   Date Created: 05 Mar 2019
-  Date Moditifed: 21 Mar 2019
+  Date Moditifed: 25 Mar 2019
 */
 
 html{
- font-family: sans-serif;
+ font-family: 'Karla', sans-serif;
  margin: 0 auto;
  width: 90%;
- font-family: 'Karla', sans-serif;
  font-weight: normal;
  background-color: #FEFFFD;
  position: relative;
@@ -19,10 +18,12 @@ html{
 }
 
 h1{
+font-family: Futura;
  text-align: center;
  padding-top: 20px;
  font-size: 2em;
  font-weight: bolder;
+ 
 }
 
 .ml16 {
