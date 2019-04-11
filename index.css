@@ -15,7 +15,7 @@ html {
     text-align: center;
     position: relative;
     color: #2C4E5F;
-    margin-top: 8em;
+    margin-top: 6em;
 }
 
 h1 {
@@ -61,7 +61,7 @@ h3 {
 
 h4 {
     font-family: 'Futura', sans-serif;
-    padding: 35px;
+    padding: 30px;
     font-weight: lighter;
     color: #2C4E5F;
 }
@@ -117,6 +117,13 @@ a:active {
 .background img {
     padding: 3rem;
     align-content: center;
+}
+
+.header,
+.header h4 {
+    padding: 10px;
+    text-align: center;
+    color: black;
 }
 
 p {
