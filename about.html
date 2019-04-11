@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-      <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-      <meta charset="UTF-8" />
-      <link rel="stylesheet prefetch" href="pages.css?v=15" />
-      <link rel="stylesheet" type="text/css" href="base.css" />
-      <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-      <meta name="theme-color" content="#213e5b" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-      <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script src="script.js?v=7"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="https://unpkg.com/scrollreveal"></script>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet prefetch" href="pages.css?v=15" />
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+    <meta name="theme-color" content="#213e5b" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js?v=7"></script>
 
     <title>About</title>
-  </head>
-  <body>
-        <div class="nav">
-          <ul>
-              <li><a href="after.html">after</a></li>
-              <li><a href="during.html">during</a></li>
-              <li><a href="prepare.html">before</a></li>
-              <li><a href="about.html">about</a></li>
-              <li id="home"><a href="index.html">home</a></li>
-          </ul>
-        </div>
-        <h1 class="ml16">About</h1>
-        <h3 class="subtitle">We're a trio at the University of Texas at Austin working to spread awareness!</h3><br>
-        <p class="one description">This is our senior project looking at ways to help people be more prepared for hurricanes. Living in Texas and experiencing hurricanes all the time, we could get complacent with them and not evacuate or properly prepare. So we wanted to help people relearn the importance of hurricane preparedness and we did that in two parts: this website that's filled with educational information and a virtual reality experience that takes a look at the destructive properties of hurricanes. Feel free to give us feedback on our project!</p>
-        <div id="about">
-            <div class="button1 pic">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-light justify-content-md-center">
+        <ul>
+            <a class="nav-item " href="index.html">home</a>
+            <a class="nav-item " href="prepare.html">prepare</a>
+            <a class="nav-item " href="during.html">endure</a>
+            <a class="nav-item " href="after.html">recover</a>
+        </ul>
+    </nav>
+
+    <h1 class="ml16">About</h1>
+    <h3 class="subtitle">We're a trio at the University of Texas at Austin working to spread awareness!</h3><br>
+    <p class="one description col">This is our senior project looking at ways to help people be more prepared for hurricanes. Living in Texas and experiencing hurricanes all the time, we could get complacent with them and not evacuate or properly prepare. So we wanted to help people
+        relearn the importance of hurricane preparedness and we did that in two parts: this website that's filled with educational information and a virtual reality experience that takes a look at the destructive properties of hurricanes. Feel free to
+        give us feedback on our project!</p>
+    <div class="container">
+        <div class="row">
+            <div class="button1 pic col">
                 <img src="assets/nancy.png" alt="avatar of nancy" width="50%">
                 <h4>Nancy Tran</h4>
             </div>
-            <div class="button2 pic">
+            <div class="button2 pic col">
                 <img src="assets/annabelle.png" alt="avatar" width="50%">
                 <h4>Annabelle Delatorre</h4>
             </div>
-            <div class="button3 pic">
+            <div class="button3 pic col">
                 <img src="assets/henry.png" alt="avatar" width="50%">
                 <h4>Henry</h4>
             </div>
-            
         </div>
+    </div><br><br><br><br>
 
-    </body>    
-    <footer>
-        <p><i>Senior Design Projects II by Nancy Tran & Annabelle Delatorre</i></p>
-    </footer>
-  </html>
+</body>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col col-md"></div>
+        <div class="col-6 col-md">
+            <h5>Hurakan</h5>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+            <img class="mb-2" src="assets/favicon.png" alt="" width="24" height="24">
+        </div>
+        <div class="col col-md"></div>
+        <div class="col-6 col-md">
+            <h5>Navigation</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prepare.html">Prepare</a></li>
+                <li><a href="during.html">Endure</a></li>
+                <li><a href="after.html">Recover</a></li>
+                <li><a href="#">VR Experience</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">The Process</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>
