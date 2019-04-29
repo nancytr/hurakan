@@ -20,45 +20,60 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js?v=7"></script>
+
+    <script src="rellax.min.js"></script>
 
     <title>How to Prepare</title>
 </head>
 
 <body>
-    <nav class="navbar fixed-top justify-content-md-center">
+    <div class="navbar fixed-top justify-content-end">
         <ul>
             <a class="nav-item " href="index.html">home</a>
             <a class="nav-item " href="prepare.html">prepare</a>
             <a class="nav-item " href="during.html">endure</a>
             <a class="nav-item " href="after.html">recover</a>
         </ul>
-    </nav>
+    </div>
 
     <h1 class="ml16">how to prepare</h1>
     <h3 class="subtitle">get started earlier and be prepared for the worst</h3><br>
-    <div class="container">
-        <div class="essential one col-4">
-            <div class="block" data-fx="5">
-                <a class="block__title not-link">Essential Needs</a>
-                <p><a href="https://hurricanesafety.org/prepare/approaching-storms/">Assess your hurricane situation:</a> Know what to expect</p>
-                <p><a href="https://www.dps.texas.gov/dem/ThreatAwareness/emerKitTxFuncAccNds.htm">Emergency Kit</a> for people with disabilities</p>
-                <a class="block__link not-link" data-img="assets/waterbottle.png">Food/Water <br>(Enough for every person in your household)</a>
-                <a class="block__link not-link" data-img="assets/medkit.png" href="#firstaid">First Aid Kit</a>
-                <a class="block__link not-link" data-img="assets/money.png" href="#tools">Tools/Supplies</a>
-                <a class="block__link not-link" data-img="assets/Surge1.jpg">Have emergency numbers and local resources</a>
-                <p><a href="https://www.privateadvisorgroup.com/blog/emergency-preparedness/">Prepare</a> and assess financially</p>
-                <p><a href="https://ratesforinsurance.com/emergency-kit/">Stock</a> up your car</p>
-                <p><a href="https://hurricanesafety.org/prepare/prepare-your-business/">Take care</a> of your business front</p>
-                <p>List of <a href="https://hurricanesafety.org/prepare/prepare-your-business/">local shelters</a></p>
 
-            </div>
-        </div><br>
+    <div class=" section--nav" id="Beca">
+        <span class="link-copy"></span>
+        <nav class="nav nav--beca">
+            <a href="#home"><button class="nav__item nav__item--current not-link" aria-label="Item 0"><span class="nav__item-title"><span>Essentials</span></span></button></a>
+            <a href="#home"><button class="nav__item" aria-label="Item 1" onclick=""></span><span class="nav__item-title"><span>First Aid</span></span></button></a>
+            <button class="nav__item " aria-label="Item 2"><span class="nav__item-title"><span>Tools/Supplies</span></button>
+            <button class="nav__item" aria-label="Item 3"><span class="nav__item-title"><span>Home Needs</span></span></button>
+            <button class="nav__item" aria-label="Item 4"><span class="nav__item-title"><span>Protect your Home</span></span></button>
+            <button class="nav__item" aria-label="Item 5"><span class="nav__item-title"><span>Insurance</span></span></button>
+
+        </nav>
     </div>
     <div class="container">
-        <div class="essential two col" id="firstaid">
+        <div class="row justify-content-md-center">
+            <div class="essential one" id="essential">
+                <div class="block col" data-fx="5">
+                    <h3>Essential Needs</h3>
+                    <p><a href="https://hurricanesafety.org/prepare/approaching-storms/" target="_blank">Assess your hurricane situation:</a> Know what to expect</p>
+                    <p>If you need to evacute, know your<a href="http://ftp.dot.state.tx.us/pub/txdot-info/trv/evacuation/houston.pdf" target="_blank"> routes</a></p>
+                    <p><a href="https://www.dps.texas.gov/dem/ThreatAwareness/emerKitTxFuncAccNds.htm" target="_blank">Emergency Kit</a> for people with disabilities</p>
+                    <a class="block__link not-link" data-img="assets/waterbottle.png">Food/Water <br>(Enough for every person in your household)</a>
+                    <a class="block__link not-link" data-img="assets/medkit.png" href="#firstaid">First Aid Kit</a>
+                    <a class="block__link not-link" data-img="assets/money.png" href="#tools">Tools/Supplies</a>
+                    <a class="block__link not-link" data-img="">Have emergency numbers and local resources</a>
+                    <p><a href="https://www.privateadvisorgroup.com/blog/emergency-preparedness/" target="_blank">Prepare</a> and assess financially</p>
+                    <p><a href="https://ratesforinsurance.com/emergency-kit/" target="_blank">Stock</a> up your car</p>
+                    <p><a href="https://hurricanesafety.org/prepare/prepare-your-business/" target="_blank">Take care</a> of your business front</p>
+                    <p>List of <a href="https://hurricanesafety.org/prepare/prepare-your-business/" target="_blank">local shelters</a></p>
+                </div>
+            </div><br>
+        </div>
+    </div>
+    <!-- <div class="essential two col" id="firstaid">
             <div class="block" data-fx="5">
-                <a class="block__title not-link">First Aid Kit</a>
+                <h3>First Aid Kit</h3>
                 <p>Adhesive bandages, various sizes</p>
                 <a class="block__link indent not-link" data-img="assets/band-aid.png">5″ x 9″ sterile dressing</a>
                 <a class="block__link indent not-link" data-img="assets/Surge1.jpg">3 x 3 sterile gauze pads</a>
@@ -72,15 +87,79 @@
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">Tweezers</a>
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">CPR breathing barrier, such as a face shield</a>
             </div>
-        </div><br>
+        </div><br> -->
 
 
+    <section id="faq">
+        <div class="wrap container justify-content-md-center">
+            <h2><b>Supply Kits Checklist</b></h2>
+            <h4>Here's a collection of kits to get you started on your own emergency kits. This could get overwhelming so customize it to the needs of you and your family and only get what you really need.</h4>
+            <div class="content">
+                <div class="col">
+                    <div class="pair">
+                        <h5>The Essentials</h5>
+                        <p>Food/Water: Enough for your everyone in your household</p>
+                        <p>Basic First Aid Kit</p>
+                        <p>Emergency numbers and local resources</p>
+                        <p>Flashlight</p>
+                        <p>List of local shelters</p>
+                        <p>Important documents kept in a waterproof container</p>
+                        <p>Airtight plastic bags</p>
+                        <p>Batteries</p>
+                        <p>Radio</p>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pair">
+                        <h5>First Aid Kit</h5>
+                        <p>Adhesive bandages, various sizes</p>
+                        <p class="indent">5″ x 9″ sterile dressing</p>
+                        <p class="indent">3 x 3 sterile gauze pads</p>
+                        <p class="indent">roll 3″ cohesive bandage</p>
+                        <p>Germicidal hand wipes or waterless alcohol-based hand sanitizer / antiseptic wipes</p>
+                        <p>(2) pair large medical grade non-latex gloves</p>
+                        <p>Adhesive tape, 2″ width</p>
+                        <p>Anti-bacterial ointment</p>
+                        <p>Cold pack</p>
+                        <p>Scissors (small, personal)</p>
+                        <p>Tweezers</p>
+                        <p>CPR breathing barrier, such as a face shield</p>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pair">
+                        <h5>Tools and Supplies</h5>
+                        <p>Mess kits, or paper cups, plates, and plastic utensils</p>
+                        <p>Emergency preparedness manual</p>
+                        <p>Battery-operated radio and extra batteries</p>
+                        <p>Flashlight and extra batteries</p>
+                        <p>Cash and/or change</p>
+                        <p>Fire extinguisher: small canister ABC type</p>
+                        <p>Pliers, Tape, Compass</p>
+                        <p>Lighter or matches in a waterproof container</p>
+                        <p>Signal flare</p>
+                        <p>Whistle</p>
+                        <p>Power Generator</p>
+                        <p>Needle/Thread</p>
+                        <p>Shut-off wrench, to turn off household gas and water</p>
+                        <p>Plastic storage containers</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 
         <div class="essential three col" id="tools">
             <div class="block" data-fx="5">
-                <a class="block__title not-link">Tools/Supplies</a>
+                <h3>Tools/Supplies</h3>
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">Mess kits, or paper cups, plates, and plastic utensils</a>
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">Emergency preparedness manual</a>
-                <a class="block__link not-link" data-img="assets/battery.jpg">Battery-operated radio and extra batteries</a>
+                <a class="block__link not-link" data-img="assets/battery.png">Battery-operated radio and extra batteries</a>
                 <a class="block__link not-link" data-img="assets/battery.png">Flashlight and extra batteries</a>
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">Cash and/or change</a>
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">Fire extinguisher: small canister ABC type</a>
@@ -90,60 +169,86 @@
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">Whistle</a>
                 <a class="block__link not-link" data-img="assets/Surge1.jpg">CPR breathing barrier, such as a face shield</a>
             </div>
-        </div><br>
-    </div>
+        </div><br> -->
 
-    <div class="block four container">
-        <h3><b>Home Needs</b></h3>
-        <ul>
-            <li>Keep these records in a waterproof, portable container:<br> Will, insurance policies, contracts, deeds, stocks and bonds, Passports, social security cards, immunization records, Bank account numbers, Credit card account numbers and companies</li>
-            <li>Inventory of valuable household goods, important telephone numbers</li>
-            <li>Family records (birth, marriage, death certificates)</li>
-            <li>Keep items in airtight plastic bags</li>
-            <li>Store your kit in a convenient place known to all family members. Keep a smaller version of the supplies kit in the trunk of your car.</li>
-            <li>Re-think your kit and family needs at least once a year. Replace batteries, update clothes, etc. </li>
-            <li>Change your stored water supply every six months so it stays fresh</li>
-            <li>Replace your stored food every six months</li>
-            <li>Ask your physician or pharmacist about storing prescription medications</li>
-        </ul>
+    <div class="block four container" id="home">
+        <div class="row">
+            <h3><b>Home Needs</b></h3>
+            <div class="col">
+                <ul>
+                    <li>Keep these records in a waterproof, portable container:<br> Will, insurance policies, contracts, deeds, stocks and bonds, Passports, social security cards, immunization records, Bank account numbers, Credit card account numbers and
+                        companies
+                    </li>
+                    <li>Inventory of valuable household goods, important telephone numbers</li>
+                    <li>Family records (birth, marriage, death certificates)</li>
+                    <li>Keep items in airtight plastic bags</li>
+                    <li>Store your kit in a convenient place known to all family members. Keep a smaller version of the supplies kit in the trunk of your car.</li>
+                    <li>Re-think your kit and family needs at least once a year. Replace batteries, update clothes, etc. </li>
+                    <li>Change your stored water supply every six months so it stays fresh</li>
+                    <li>Replace your stored food every six months</li>
+                    <li>Ask your physician or pharmacist about storing prescription medications</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="block five container">
         <h3><b>Protect and Reinforcing your Home</b></h3>
-        <ul>
-            <li>Make sure your home can be secured from water, checking doors, garage doors, roof, and windows</li>
-            <li>Board up windows</li>
-            <li>Hurricane shutters</li>
-            <li>Secure outdoor items</li>
-            <li><a href="http://www.flash.org/peril_inside.php?id=96">Prepare for power outages</a></li>
-            <li>Identify your home with legible and clearly marked street name and house number so emergency vehicles can rapidly find the location of the emergency.</li>
-        </ul>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>Make sure your home can be secured from water, checking doors, garage doors, roof, and windows</li>
+                    <li>Board up windows</li>
+                    <li>Hurricane shutters</li>
+                    <li>Secure outdoor items</li>
+                    <li><a href="http://www.flash.org/peril_inside.php?id=96" target="_blank">Prepare for power outages</a></li>
+                    <li>Identify your home with legible and clearly marked street name and house number so emergency vehicles can rapidly find the location of the emergency.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="https://www.weather.gov/images/safety/water_damage.jpg" alt="" width="80%">
+            </div>
+        </div>
     </div>
 
     <div class="block six container">
         <h3><b>Know your Insurance and What it Covers</b></h3>
-        <p>Check what coverage is on things like:</p>
-        <ul>
-            <li>Water damage</li>
-            <li>Lightning strikes</li>
-            <li>Vandalism/malicious mischief</li>
-            <li>Theft</li>
-            <li>Falling Objects</li>
-        </ul>
+        <div class="row">
+            <div class="col">
+                <p>Check what coverage is on things like:</p>
+                <ul>
+                    <li>Water damage</li>
+                    <li>Lightning strikes</li>
+                    <li>Vandalism/malicious mischief</li>
+                    <li>Theft</li>
+                    <li>Falling Objects</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="http://flash.org/hurricane-season/images/2015_hurricane_box4.jpg" alt="">
+
+            </div>
+            <div class="col">
+                <img src="http://flash.org/hurricane-season/images/2015_hurricane_box5.jpg" alt="">
+
+            </div>
+        </div>
     </div>
 
 </body>
+<script src="script.js?v=7"></script>
 <script src="charming.min.js"></script>
 <script src="imagesloaded.pkgd.min.js"></script>
 <script src="TweenMax.min.js"></script>
 <script src="demo.js"></script>
+<script src="main.js"></script>
 
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
         <div class="col col-md"></div>
         <div class="col-6 col-md">
             <h5>Hurakan</h5>
-            <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+            <small class="d-block mb-3 text-muted">&copy; 2019</small>
             <img class="mb-2" src="assets/favicon.png" alt="" width="24" height="24">
         </div>
         <div class="col col-md"></div>
@@ -166,5 +271,6 @@
         </div>
     </div>
 </footer>
+<div id="progress"></div>
 
 </html>

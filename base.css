@@ -13,7 +13,7 @@ body {
     --color-blocktitle: #2C4E5F;
     --color-blocktitle-hover: #FF8984;
     --color-text: #767676;
-    font-family: Futura, Arial, sans-serif;
+    /* font-family: Futura, Arial, sans-serif; */
     min-height: 100vh;
     /* color: var(--color-text); */
     background-color: var(--color-bg);
@@ -210,16 +210,16 @@ main {
     .block {
         align-items: flex-start;
     }
-    .content {
+    /* .content {
         position: relative;
         display: grid;
-        /* grid-template-columns: repeat(3,33.33%); */
+        grid-template-columns: repeat(3,33.33%);
         margin: 0 auto;
         padding-top: 20vh;
         max-width: 800px;
         min-height: 100vh;
         text-align: left;
-    }
+    } */
     .content__text {
         grid-column: span 2;
     }

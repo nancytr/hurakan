@@ -1,25 +1,30 @@
 /*
   Hurakan
-  File: index.css
+  File:pages.css
   Author: Nancy Tran
   Date Created: 05 Mar 2019
-  Date Moditifed: 25 Mar 2019
+  Date Moditifed: 22 Apr 2019
 */
 
 html {
+    margin: 3em auto;
     font-family: 'IBM Plex Sans', sans-serif !important;
-    margin: 0 auto;
-    margin-top: 35px;
-    width: 90%;
     font-weight: normal;
     background-color: #FEFFFD;
     position: relative;
     color: #2C4E5F;
-    align-items: left;
+    scroll-behavior: smooth;
 }
 
+
+/* 
+.col {
+    border-left: 3px lightgray solid;
+    border-right: 3px lightgray solid;
+} */
+
 h1 {
-    font-family: Futura;
+    font-family: 'Futura', 'IBM Plex Sans', sans-serif;
     text-align: center;
     padding-top: 20px;
     font-size: 2em;
@@ -49,7 +54,11 @@ h3 {
 }
 
 h4 {
-    padding: 30px;
+    padding: 1em;
+}
+
+.subtitle {
+    padding: 0 4em 4em 4em;
 }
 
 li {
@@ -60,10 +69,6 @@ li {
 
 body {
     font-size: 18px;
-}
-
-#home {
-    float: left;
 }
 
 #media {
@@ -79,30 +84,34 @@ p {
 
 a {
     color: black !important;
-    border-bottom: 2px solid #fc574f;
+    border-bottom: 2px solid #0C9DAB;
     text-decoration: none;
 }
 
 a:hover {
-    color: #fc574f !important;
+    color: #0C9DAB !important;
     text-decoration: none !important;
-    border-bottom: 2px solid #fc574f;
-    font-weight: bolder;
+    border-bottom: 2px solid #0C9DAB;
+    font-weight: bold;
 }
 
-nav {
-    margin: 30px 0 40px 0;
+.navbar {
+    margin: 1em 0 2em 0;
 }
 
 .nav-item {
-    color: inherit;
+    color: #2C4E5F;
+    letter-spacing: 1px;
     text-decoration: underline wavy;
     border: none;
-    padding: 0 30px 0 30px;
+    padding: 0 20px 0 30px;
+    font-family: Futura, sans-serif;
+    font-size: smaller;
+    font-weight: bold;
 }
 
 .nav-item:hover {
-    color: #fc574f;
+    color: #608B9B;
     text-decoration: underline wavy;
     border: none;
     font-weight: bolder;
@@ -111,16 +120,20 @@ nav {
 .not-link {
     border: none;
     text-decoration: none;
+    color: inherit;
+    font-weight: lighter !important;
 }
 
 .not-link:hover {
     border: none;
     text-decoration: none;
+    color: inherit !important;
+    font-weight: lighter;
 }
 
 .block {
     margin: 0 auto;
-    padding: 0 0 10vh;
+    padding: 0 0 6vh;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -147,17 +160,45 @@ nav {
 }
 
 .description {
-    text-align: center;
+    text-align: justify;
+    font-size: 1.2em;
 }
 
-section {
+.sources p {
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+.sources h4 {
+    text-align: right;
+    padding: 0 0 .5em 0;
+}
+
+.blockquote {
+    width: 100%;
+    background-color: #2C4E5F;
+    color: white;
+    padding: 3em;
+    /* margin-top: 2em; */
+    margin-bottom: 6em;
+}
+
+.row {
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-bottom: 8em;
+}
+
+section,
+footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     height: 80vh;
 }
 
-section .wrap {
+section .wrap,
+footer .wrap {
     /* width: 100%; */
     padding: 1em;
     box-sizing: border-box;
@@ -165,8 +206,8 @@ section .wrap {
 
 #faq {
     height: auto;
-    padding-bottom: 5em;
-    padding-top: 5em;
+    padding-bottom: 10em;
+    padding-top: 1em;
 }
 
 #faq .wrap {
@@ -176,26 +217,32 @@ section .wrap {
 }
 
 #faq h2 {
+    padding-bottom: .5em;
     text-align: center;
 }
 
 #faq .content {
     display: flex;
     flex-flow: wrap;
-    margin: 1em -0.5em 0 -0.5em;
+    margin: 2em 2em 0 2em;
 }
 
 #faq .content .column {
     width: 50%;
     box-sizing: border-box;
-    padding: 0 0.5em;
+    padding: 0 0.6em;
 }
 
 #faq .content .pair {
     margin-bottom: 2em;
 }
 
-#faq .content .pair h3 {
+
+/* #faq .col {
+    width: 25%;
+} */
+
+#faq .content .pair h5 {
     cursor: pointer;
     text-align: left;
     /* text-transform: uppercase; */
@@ -204,21 +251,21 @@ section .wrap {
     letter-spacing: 0.05em;
 }
 
-#faq .content .pair h3:after {
+#faq .content .pair h5:after {
     content: "";
     display: inline-block;
     height: 0;
     width: 0;
     border: 0 solid transparent;
     border-width: 0.3em 0.5em;
-    border-left-color: #ff4115;
+    border-left-color: #FF8984;
     margin-left: 0.4em;
     transform: rotate(90deg);
     transform-origin: 25% 50%;
     transition: 0.1s ease-in-out transform;
 }
 
-#faq .content .pair.collapsed h3:after {
+#faq .content .pair.collapsed h5:after {
     transform: none;
 }
 
@@ -243,11 +290,166 @@ footer a {
     position: relative;
     margin: 1px 0 1px 15px;
     padding: 2px 0 2px 0;
-    border-bottom: 2px solid #fc574f;
+    border-bottom: 2px solid #0C9DAB;
 }
 
 footer a:hover {
     font-weight: bolder;
     text-decoration: none;
-    color: #fc574f;
+    color: #0C9DAB;
 }
+
+
+/* 
+#progress {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    opacity: 0.6;
+}
+
+#progress div {
+    cursor: pointer;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.2em auto;
+    border-radius: 9em;
+    border: 0.1em solid white;
+}
+
+#progress div:first-child {
+    border-radius: 0;
+    width: 0.4em;
+    height: 0.4em;
+}
+
+#progress div.active {
+    background: white;
+} */
+
+.nav {
+    position: relative;
+    width: 8em;
+    margin: 0 0 0 3em;
+}
+
+.nav__item {
+    line-height: 1;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    color: currentColor;
+    border: 0;
+    background: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav__item:focus {
+    outline: none;
+}
+
+.nav--beca {
+    /* position: absolute; */
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+.nav--beca .nav__item {
+    width: 7em;
+    height: 1.5em;
+    font-size: smaller;
+}
+
+.nav--beca .nav__item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    margin: -1px 0 0 0;
+    opacity: 0.5;
+    background: #000;
+    -webkit-transform: scale3d(0.5, 1, 1);
+    transform: scale3d(0.5, 1, 1);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.nav--beca .nav__item:not(.nav__item--current):focus::before,
+.nav--beca .nav__item:not(.nav__item--current):hover::before {
+    opacity: 1;
+    -webkit-transform: scale3d(0.75, 1, 1);
+    transform: scale3d(0.75, 1, 1);
+}
+
+.nav--beca .nav__item--current::before {
+    opacity: 1;
+    -webkit-transform: scale3d(2, 1, 1);
+    transform: scale3d(2, 1, 1);
+}
+
+.nav--beca .nav__item-title {
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    overflow: hidden;
+    margin: -1.15em 0 0 1.7em;
+    text-align: left;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.nav--beca .nav__item-title span {
+    display: block;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.nav--beca .nav__item--current .nav__item-title span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
