@@ -129,7 +129,7 @@ a:active {
 
 .vl {
     border-left: 2px solid #2C4E5F;
-    height: 37vh;
+    height: 36vh;
     position: relative;
     left: 50%;
     margin-left: -3px;
@@ -140,7 +140,7 @@ a:active {
     margin-top: 0;
     margin-bottom: 0;
     border-left: 2px solid #2C4E5F;
-    height: 28vh;
+    height: 24vh;
     position: absolute;
     left: 50%;
     margin-left: -3px;
