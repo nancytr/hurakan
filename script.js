@@ -21,7 +21,6 @@ $(document).ready(function() {
     ScrollReveal().reveal('.button3', { delay: 700 })
     ScrollReveal().reveal('.context', { delay: 400 });
     ScrollReveal().reveal('.wrap', { delay: 400 })
-    ScrollReveal().reveal('.subtitle', { delay: 200 });
     ScrollReveal().reveal('.one', { delay: 400 })
     ScrollReveal().reveal('.two', { delay: 400 })
     ScrollReveal().reveal('.three', { delay: 400 })
