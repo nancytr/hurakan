@@ -200,6 +200,15 @@ a:hover {
     align-self: right;
 }
 
+#faq p {
+    display: list-item;
+    list-style-type: circle;
+}
+
+#float {
+    position: relative;
+}
+
 img {
     margin: 2em auto;
     text-align: center;
@@ -256,7 +265,6 @@ footer .wrap {
 #faq .content .pair h5 {
     cursor: pointer;
     text-align: left;
-    /* text-transform: uppercase; */
     font-weight: normal;
     margin: 0 0 1em 0;
     letter-spacing: 0.05em;
